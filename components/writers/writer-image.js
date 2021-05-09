@@ -1,12 +1,13 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import styles from '@/styles/writer.module.css';
 
-const WriterImage = () => {
+const WriterImage = (props) => {
+  const { } = props
   return (
-    <div>
-      an Image
-      {/* image of writer will go here with next/img*/}
+    <div className={styles.image}>
+      <Image src="/images/site/Cameron.jpg" width="cover" height="300" />
     </div>
-  )
-}
+  );
+};
 
-export default WriterImage
+export default WriterImage;
