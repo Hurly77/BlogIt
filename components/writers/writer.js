@@ -4,7 +4,7 @@ import styles from '@/styles/writer.module.css'
 const Writer = () => {
   return (
     <section className={styles.writer}>
-      <WriterImage className={styles.image} />
+      <WriterImage />
       <WriterHeadline />
       <WriterBio />
     </section>
