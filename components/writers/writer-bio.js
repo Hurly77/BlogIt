@@ -1,4 +1,4 @@
-import React from 'react'
+import styles from '@/styles/writer.module.css'
 
 const WriterBio = () => {
   return (
