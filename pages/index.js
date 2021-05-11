@@ -1,4 +1,4 @@
-import Writer from '../components/writers/writer'
+import { Writer } from '@/writer/*'
 
 const HomePage = () => {
   return (
