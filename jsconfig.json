@@ -3,9 +3,11 @@
     "baseUrl": ".",
     "paths" : {
       "@/components/*":["components/*"],
+      "@/writer/*" : ["components/writers/index.js"],
       "@/store/*": ["store/*"],
       "@/styles/*" : ["styles/*"],
-      "@/public/*" : ["public/*"]
+      "@/public/*" : ["public/*"],
+      "@/navigation/*" : ["components/navigation/index.js"]
     }
   }
 }
