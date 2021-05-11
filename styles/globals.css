@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
   box-sizing: border-box;
@@ -15,6 +15,8 @@ body {
   --color-grey-700: hsl(265, 4%, 31%);
   --color-grey-800: hsl(276, 5%, 20%);
   --color-grey-900: hsl(280, 5%, 13%);
+
+  --color-logo-100: hsl(178, 100%, 35%);
 
   --color-primary-50: #c8b3ce;
   --color-primary-100: #a07aaa;
@@ -41,7 +43,9 @@ body {
   --size-16: 4rem;
   --size-20: 5rem;
   --size-40: 10rem;
-
+  --banner-h: 33.33vh;
+  --banner-w: 100vw;
+  --home-avatar: 30vw;
   margin: 0;
   background-color: var(--color-grey-500);
   color: #252525;
