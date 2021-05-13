@@ -5,6 +5,8 @@ import Image from 'next/image';
 const Story = (props) => {
   const { title, date, content, image, slug } = props;
 
+  const displayText = content.split(' ', 35).join(' ')
+
   const formatedDate = new Date(date).toLocaleString('en-Us', {
     day: 'numeric',
     month: 'long',
@@ -21,7 +23,7 @@ const Story = (props) => {
           <div className={styles.content}>
             <h3>{title}</h3>
             <time>{formatedDate}</time>
-            <p>{content}</p>
+            <p>{displayText}</p>
           </div>
         </a>
       </Link>
