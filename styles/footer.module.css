@@ -1,0 +1,10 @@
+.footer {
+  background-color: var(--color-grey-300);
+  padding: 1rem;
+  max-height: 10vh;
+  min-height: 5vh;
+}
+
+.footer p {
+  color: var(--color-grey-900);
+}

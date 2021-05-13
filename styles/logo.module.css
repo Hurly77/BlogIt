@@ -2,7 +2,7 @@
   font-size: var(--size-5);
   font-weight: bold;
   font-family: 'Oswald', sans-serif;
-  color: var(--color-logo-100);
+  color: var(--color-primary-300);
 }
 
 @media (min-width: 768px) {
