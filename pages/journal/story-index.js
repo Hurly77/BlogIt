@@ -1,11 +1,11 @@
 import React from 'react'
 
-const AllPostsPage = () => {
+const StoryIndex = () => {
   return (
     <div>
-
+      
     </div>
   )
 }
 
-export default AllPostsPage
+export default StoryIndex
