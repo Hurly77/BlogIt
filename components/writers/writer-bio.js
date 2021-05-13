@@ -1,10 +1,7 @@
-import styles from '@/styles/writer.module.css'
-
 const WriterBio = () => {
   return (
     <p>
-      Put text
-      {/* bio for writer goes here */}
+      I Love software, computers and dogs. I mostly write about JavaScript and NextJS.
     </p>
   )
 }
