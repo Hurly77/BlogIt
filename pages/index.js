@@ -1,4 +1,4 @@
-import { Writer, Featured } from '@/writer/*'
+import { Writer, Featured } from '@/writer/*';
 
 const HomePage = ({ stories }) => {
   return (
@@ -6,17 +6,22 @@ const HomePage = ({ stories }) => {
       <Writer />
       <Featured stories={stories} />
     </div>
-  )
-}
+  );
+};
 
 export const getStaticProps = async () => {
-  const res = await fetch('https://blogit-cf715-default-rtdb.firebaseio.com/stories.json')
-  const json = await res.json()
-  const data = await json.map(story => story)
+  const stories = [];
+  const res = await fetch(process.env.TEST_URL);
+  const json = await res.json();
+  json.map((story) => {
+    if (story.isFeatured) {
+      stories.push(story);
+    }
+  });
 
   return {
-    props: { stories: data }
-  }
-}
+    props: { stories: stories },
+  };
+};
 
-export default HomePage
+export default HomePage;
