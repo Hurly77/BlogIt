@@ -3,7 +3,6 @@ import { AllStories } from '@/stories/*'
 const StoryIndex = (props) => {
   return (
     <div>
-      hello
       <AllStories stories={props.stories} />
     </div>
   )
