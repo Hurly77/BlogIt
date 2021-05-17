@@ -3,9 +3,10 @@ import styles from '@/styles/story-item.module.css';
 import Image from 'next/image';
 
 const Story = (props) => {
-  const { title, date, content, image, slug } = props;
+  const { title, date, content, image } = props;
 
   const displayText = content.split(' ', 35).join(' ')
+  const href = `/journal/${title.toLowerCase()}`
 
   const formatedDate = new Date(date).toLocaleString('en-Us', {
     day: 'numeric',
@@ -13,9 +14,12 @@ const Story = (props) => {
     year: 'numeric',
   });
 
+
   return (
     <li className={styles.story}>
-      <Link href={slug}>
+      <Link
+        href={href}
+      >
         <a>
           <div className={styles.image}>
             <Image src={`/images/${image}`} width={300} height={200} layout="responsive" />
