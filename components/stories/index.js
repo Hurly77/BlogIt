@@ -1,3 +1,5 @@
 export { default as Story } from './story'
 export { default as StoriesGrid } from './stories-grid'
 export { default as AllStories } from './all-stories'
+export { default as StoryContent } from './story-page/story-content'
+export { default as StoryHead } from './story-page/story-head'
