@@ -1,19 +1,19 @@
 import Link from 'next/link';
 import styles from '@/styles/story-item.module.css';
 import Image from 'next/image';
+import slugify from '@/utils/slugifiy'
 
 const Story = (props) => {
   const { title, date, content, image } = props;
 
   const displayText = content.split(' ', 35).join(' ')
-  const href = `/journal/${title.toLowerCase()}`
+  const href = slugify(title)
 
   const formatedDate = new Date(date).toLocaleString('en-Us', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
   });
-
 
   return (
     <li className={styles.story}>
