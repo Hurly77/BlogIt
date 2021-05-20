@@ -1,7 +1,7 @@
 import styles from '@/styles/story-head.module.css'
+import Image from 'next/image'
 
-const StoryHead = (props) => {
-  const { title, image } = props
+const StoryHead = ({ title, image }) => {
   return (
     <header className={styles.header}>
       <h1>{title}</h1>
