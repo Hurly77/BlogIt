@@ -10,10 +10,11 @@ const dummy = {
 }
 
 const StoryContent = () => {
+  const imagePath = `/imgames/stories/${DUMMY_POST.slug}/${DUMMY_POST.image}`;
   return (
     <article>
       <StoryHead image={dummy.image} title={dummy.title} />
-      <ReactMarkdown>content</ReactMarkdown>
+      <ReactMarkdown>{dummy.content}</ReactMarkdown>
     </article>
   )
 }
