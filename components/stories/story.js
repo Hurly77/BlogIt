@@ -16,7 +16,7 @@ const Story = (props) => {
   });
 
   return (
-    <li className={styles.story}>
+    <li className={styles.story} key={title + Math.random()}>
       <Link
         href={href}
       >

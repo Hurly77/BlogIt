@@ -4,7 +4,7 @@ import { Story } from '@/stories/*'
 const StoriesGrid = ({ stories }) => {
   if (stories[0]) {
     return (
-      <ul className={styles.grid}>
+      <ul className={styles.grid} >
         {stories.map((story) =>
           <Story {...story} />
         )}
