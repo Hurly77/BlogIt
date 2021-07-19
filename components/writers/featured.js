@@ -1,14 +1,14 @@
-import { StoriesGrid } from '@/stories/*'
-import styles from '@/styles/featured.module.css'
+import { StoriesGrid } from '@/stories/*';
+import styles from '@/styles/featured.module.css';
 
 const Featured = (props) => {
-  const { stories } = props
-  return (
-    <section className={styles.latest}>
-      <h2>Featured Stories</h2>
-      <StoriesGrid stories={stories} />
-    </section>
-  )
-}
+	const { stories } = props;
+	return (
+		<section className={styles.latest}>
+			{/* <h2>Featured Stories</h2> */}
+			<StoriesGrid stories={stories} />
+		</section>
+	);
+};
 
-export default Featured
+export default Featured;

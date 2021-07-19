@@ -1,22 +1,46 @@
-import { StoryHead } from '@/stories/*'
-import ReactMarkdown from 'react-markdown'
+import { StoryHead } from '@/stories/*';
+import styles from '@/styles/story-content.module.css';
+import ReactMarkdown from 'react-markdown';
+import Image from 'next/image';
 
-const dummy = {
-  title: 'My First Story',
-  image: '/images/fail.jpg',
-  slug: '/journal/my-first-story',
-  data: '01-02-2021',
-  content: '# This is my first post pretty cool, no?'
-}
+const StoryContent = (props) => {
+	const { slug, title, date, image, excerpt, content } =
+		props;
+	const customRenderers = {
+		p(paragraph) {
+			const { node } = paragraph;
 
-const StoryContent = () => {
-  const imagePath = `/imgames/stories/${DUMMY_POST.slug}/${DUMMY_POST.image}`;
-  return (
-    <article>
-      <StoryHead image={dummy.image} title={dummy.title} />
-      <ReactMarkdown>{dummy.content}</ReactMarkdown>
-    </article>
-  )
-}
+			if (node.children[0].tagName === 'img') {
+				const image = node.children[0];
+				console.log(image);
+				return (
+					<div className={styles.image}>
+						<Image
+							src={`/images/stories/${slug}/${image.properties.src}`}
+							alt={image.alt}
+							width={600}
+							height={400}
+						/>
+					</div>
+				);
+			}
+			return <p>{paragraph.children}</p>;
+		},
+	};
 
-export default StoryContent
+	const imagePath = `/images/stories/${slug}/${image}`;
+	return (
+		<article className={styles.content}>
+			<StoryHead
+				image={imagePath}
+				title={title}
+				date={date}
+			/>
+			<ReactMarkdown components={customRenderers}>
+				{content}
+			</ReactMarkdown>
+		</article>
+	);
+};
+
+export default StoryContent;

@@ -1,27 +1,22 @@
 import { Writer, Featured } from '@/writer/*';
+import { getFeaturedStories } from '@/helpers/stories-util';
 
-const HomePage = ({ stories }) => {
-  return (
-    <div>
-      <Writer />
-      <Featured stories={stories} />
-    </div>
-  );
+const HomePage = ({ featuredStories }) => {
+	return (
+		<div>
+			<Writer />
+			<Featured stories={featuredStories} />
+		</div>
+	);
 };
 
 export const getStaticProps = async () => {
-  const stories = [];
-  const res = await fetch(process.env.TEST_URL);
-  const json = await res.json();
-  json.map((story) => {
-    if (story.isFeatured) {
-      stories.push(story);
-    }
-  });
+	const featuredStories = getFeaturedStories();
 
-  return {
-    props: { stories: stories },
-  };
+	return {
+		props: { featuredStories },
+		revalidate: 600,
+	};
 };
 
 export default HomePage;

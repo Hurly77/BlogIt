@@ -1,21 +1,19 @@
-import { AllStories } from '@/stories/*'
+import { AllStories } from '@/stories/*';
+import { getAllStories } from '@/helpers/stories-util';
 
-const StoryIndex = (props) => {
-  return (
-    <div>
-      <AllStories stories={props.stories} />
-    </div>
-  )
-}
+const StoryIndex = ({ allStories }) => {
+	return (
+		<div>
+			<AllStories stories={allStories} />
+		</div>
+	);
+};
+
+export default StoryIndex;
 
 export const getStaticProps = async () => {
-  const res = await fetch(process.env.TEST_URL)
-  const json = await res.json()
-  const data = await json.map((story) => story)
-
-  return {
-    props: { stories: data }
-  }
-}
-
-export default StoryIndex
+	const allStories = getAllStories();
+	return {
+		props: { allStories },
+	};
+};

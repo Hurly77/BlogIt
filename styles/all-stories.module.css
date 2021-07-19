@@ -1,17 +1,37 @@
 .stories {
-  width: 90%;
-  max-width: 60rem;
-  margin: var(--size-8) auto;
+	width: 90%;
+	max-width: 60rem;
+	margin: var(--size-8) auto;
 }
 
 .stories h1 {
-  font-size: var(--size-8);
-  color: var(--color-grey-800);
-  text-align: center;
+	font-size: var(--size-8);
+	color: whitesmoke;
+	text-align: center;
 }
 
-@media (min-width: 768px) {
-  .stories h1 {
-    font-size: var(--size-16);
-  }
+@media (max-width: 600px) {
+	.stories h1 {
+		margin: 0;
+		height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		padding: 0 10px 0 10px;
+		font-size: var(--size-8);
+		background-color: var(--color-grey-700);
+		color: var(--color-grey-100);
+		margin-bottom: 2px;
+	}
+
+	.stories li {
+		width: 100%;
+	}
+
+	.stories {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
 }

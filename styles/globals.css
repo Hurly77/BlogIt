@@ -1,67 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:root {
+	--divider: rgba(0, 0, 0, 0.398);
+	--color-grey-50: hsl(195, 3%, 74%);
+	--color-grey-100: hsl(198, 16%, 84%);
+	--color-grey-200: hsl(200, 15%, 73%);
+	--color-grey-300: hsl(200, 16%, 62%);
+	--color-grey-400: hsl(200, 15%, 54%);
+	--color-grey-500: hsl(200, 18%, 46%);
+	--color-grey-600: hsl(199, 18%, 40%);
+	--color-grey-700: hsl(199, 18%, 33%);
+	--color-grey-800: hsl(200, 18%, 26%);
+	--color-grey-900: hsl(200, 19%, 18%);
+
+	--color-logo-100: #558b2f;
+
+	--color-primary-50: #e0f7fa;
+	--color-primary-100: #b2ebf2;
+	--color-primary-200: #80deea;
+	--color-primary-300: #00bcd4;
+	--color-primary-400: #00acc1;
+	--color-primary-500: #007c91;
+	--color-primary-600: #006978;
+	--color-primary-700: #005662;
+
+	--color-success-100: #a2f0bc;
+	--color-success-500: #12bd4b;
+
+	--color-error-100: #f1acc9;
+	--color-error-500: #a10c4a;
+
+	--size-1: 0.25rem;
+	--size-2: 0.5rem;
+	--size-3: 0.75rem;
+	--size-4: 1rem;
+	--size-5: 1.25rem;
+	--size-6: 1.5rem;
+	--size-8: 2rem;
+	--size-16: 4rem;
+	--size-20: 5rem;
+	--size-40: 10rem;
+	--banner-w: 100vw;
+	--home-avatar: 30vw;
+
+	--p: 50px;
+	--p1: 100px;
+	--p2: 200px;
+	--p3: 300px;
+
+	--r5: 5%;
+	--r10: 10%;
+	--r15: 15%;
+	--r20: 20%;
+	--r25: 25%;
+	--r50: 50%;
+
+	--kg: 21px;
 }
 
 body {
-  --color-grey-50: hsl(195, 3%, 74%);
-  --color-grey-100: hsl(198, 16%, 84%);
-  --color-grey-200: hsl(200, 15%, 73%);
-  --color-grey-300: hsl(200, 16%, 62%);
-  --color-grey-400: hsl(200, 15%, 54%);
-  --color-grey-500: hsl(200, 18%, 46%);
-  --color-grey-600: hsl(199, 18%, 40%);
-  --color-grey-700: hsl(199, 18%, 33%);
-  --color-grey-800: hsl(200, 18%, 26%);
-  --color-grey-900: hsl(200, 19%, 18%);
-
-  --color-logo-100: #558b2f;
-
-  --color-primary-50: #e0f7fa;
-  --color-primary-100: #b2ebf2;
-  --color-primary-200: #80deea;
-  --color-primary-300: #00bcd4;
-  --color-primary-400: #00acc1;
-  --color-primary-500: #007c91;
-  --color-primary-600: #006978;
-  --color-primary-700: #005662;
-
-  --color-success-100: #a2f0bc;
-  --color-success-500: #12bd4b;
-
-  --color-error-100: #f1acc9;
-  --color-error-500: #a10c4a;
-
-  --size-1: 0.25rem;
-  --size-2: 0.5rem;
-  --size-3: 0.75rem;
-  --size-4: 1rem;
-  --size-5: 1.25rem;
-  --size-6: 1.5rem;
-  --size-8: 2rem;
-  --size-16: 4rem;
-  --size-20: 5rem;
-  --size-40: 10rem;
-  --banner-w: 100vw;
-  --home-avatar: 30vw;
-  margin: 0;
-  background-color: var(--color-grey-400);
-  color: #252525;
-  font-family: 'Roboto', sans-serif;
+	margin: 0;
+	background-color: var(--color-grey-400);
+	/* color: #252525; */
+	font-family: 'Roboto', sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Oswald', 'Roboto', sans-serif;
+	font-family: 'Oswald', 'Roboto', sans-serif;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 button {
-  font: inherit;
-  cursor: pointer;
+	font: inherit;
+	cursor: pointer;
 }
