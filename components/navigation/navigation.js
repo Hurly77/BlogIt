@@ -3,7 +3,7 @@ import styles from '@/styles/navigation.module.css';
 import { Logo, NavLink } from './index.js';
 
 const links = [
-	{ url: '/', text: 'Home' },
+	{ url: '/contact', text: 'Contact' },
 	{ url: '/journal', text: 'Journal' },
 ];
 

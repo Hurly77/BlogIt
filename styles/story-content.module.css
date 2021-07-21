@@ -19,13 +19,13 @@
 
 @media (max-width: 600px) {
 	.content {
+		align-items: center;
 		max-width: 100%;
 		padding: 0;
 	}
 
 	.content p {
-		padding: 0;
-		width: 90%;
+		width: 80%;
 		font-size: small;
 		line-height: medium;
 	}

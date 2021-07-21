@@ -7,6 +7,8 @@ import ReactMarkdown from 'react-markdown';
 const Story = (props) => {
 	const { title, date, excerpt, image, slug } = props;
 
+	const defaultImg = '/images/default.png';
+
 	const displayText =
 		excerpt.split(' ', 20).join(' ') + ' ...';
 	const href = `/journal/${slug}`;
@@ -26,7 +28,11 @@ const Story = (props) => {
 				<a>
 					<div className={styles.image}>
 						<Image
-							src={`/images/stories/${slug}/${image}`}
+							src={
+								image === '' || image === null
+									? defaultImg
+									: `/images/stories/${slug}/${image}`
+							}
 							width={300}
 							height={200}
 							layout="responsive"

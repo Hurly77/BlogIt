@@ -21,8 +21,8 @@
 	object-fit: cover;
 }
 
-.content {
-	padding: var(--size-4);
+.excerpt {
+	padding: var(--size-3);
 }
 
 .content h3 {

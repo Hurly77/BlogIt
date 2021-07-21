@@ -4,6 +4,7 @@
 		"paths": {
 			"@/components/*": ["components/*"],
 			"@/writer/*": ["components/writers/index.js"],
+			"@/contact/*": ["components/contact/*"],
 			"@/store/*": ["store/*"],
 			"@/styles/*": ["styles/*"],
 			"@/public/*": ["public/*"],

@@ -12,6 +12,6 @@ One of the best examples of success from failures is “Percy Spencer,” a self
 
 To indirectly address the skeptic, who believes that failure is not an option. It is easy to confuse failure with apathy because giving it “the old college try” does not cut it. Failing means putting in the time and effort to seek growth and innovation. To quote the great Lucile Ball — “ I would rather regret the things I have done than regret the things I have not done.” Failure is the pursuit of success, and what defines a person is not how they celebrate victory, no. What defines a person is their capacity to fail. I would Like to believe that I’m a failure through and through.
 
-```
+```js
 
 ```

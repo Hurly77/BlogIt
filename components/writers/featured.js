@@ -5,7 +5,7 @@ const Featured = (props) => {
 	const { stories } = props;
 	return (
 		<section className={styles.latest}>
-			{/* <h2>Featured Stories</h2> */}
+			<h2>Featured Stories</h2>
 			<StoriesGrid stories={stories} />
 		</section>
 	);
